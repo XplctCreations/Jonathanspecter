@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Prata&display=swap');
+
+:root {
+  --yellow: #fbe850;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+figure {
+  margin: 0;
+}
+ul,
+ol,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+p {
+  margin: 0;
+}
+cite {
+  font-style: normal;
+}
+fieldset {
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.top-menu {
+  margin: 0;
+  padding: 3em 7em 3em 7em;
+  width: 100%;
+  color: white;
+  background-color: black;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.top-menu .top-menu-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-menu .left-top-menu {
+  font-family: 'prata';
+  font-size: 18px;
+  color: #0000;
+  background: linear-gradient(90deg, var(--yellow) 50%, rgb(24, 23, 23) 0)
+    var(--_p, 100%) / 200% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: 0.4s;
+}
+
+.top-menu .top-menu-cont:hover {
+  --_p: 0%;
+}
+
+.top-menu .mid-top-menu ul {
+  display: flex;
+  flex-direction: row;
+  color: whitesmoke;
+}
+
+.top-menu .mid-top-menu ul li {
+  margin: 0 15px 0 15px;
+  font-family: 'poppins';
+  font-size: 14px;
+}
+
+.top-menu .mid-top-menu ul li:hover {
+  transition: 0.4s;
+  color: var(--yellow);
+}
+
+.top-menu .right-top-menu p {
+  font-family: 'prata';
+  background-color: var(--yellow);
+  padding: 10px 17px 10px 17px;
+  color: black;
+  cursor: pointer;
+}
+
+.top-menu .right-top-menu p:hover {
+  transition: ease-in 0.5s;
+  border-radius: 5em;
+}
+
+.top-menu .right-top-menu img {
+  display: none;
+}
+
+.help-section .help-section-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 5em 7em 0 7em;
+  color: white;
+}
+
+.help-section .help-section-cont h2 {
+  width: 58%;
+  font-family: 'prata';
+  font-size: 40px;
+}
+
+.help-section .help-section-cont h4 {
+  margin: 1em 0 0 0;
+  width: 55%;
+  font-family: 'poppins';
+  font-weight: 400;
+  color: grey;
+  font-size: 12px;
+}
+
+.sponsor-logos .sponsor-logos-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5em 7em 0 7em;
+  color: white;
+}
+
+.sponsor-logos .sponsor-logos-cont img {
+  width: 6em;
+}
+
+.images-section .images-section-cont {
+  display: flex;
+  flex-direction: row;
+  margin: 5em 7em 0 7em;
+  justify-content: space-between;
+  color: white;
+  max-width: 90%;
+}
+
+.images-section .spense,
+.yelpcamp {
+  max-width: 50%;
+}
+
+.images-section img {
+  max-width: 100%;
+  width: 95%;
+}
+
+.images-section .spense-text {
+  margin: 2em 0 0 0;
+}
+
+.images-section h3 {
+  width: 50%;
+}
+
+.images-section .spense h3 {
+  font-family: 'prata';
+  font-size: 24px;
+  color: whitesmoke;
+}
+
+.images-section .spense h4 {
+  margin: 1em 0 0 0;
+  font-family: 'poppins';
+  width: 90%;
+  font-weight: 400;
+  color: grey;
+  font-size: 12px;
+}
+
+.images-section .yelpcamp-text {
+  margin: 2em 0 0 0;
+}
+.images-section .yelpcamp h3 {
+  font-family: 'prata';
+  font-size: 24px;
+  color: whitesmoke;
+}
+
+.images-section .yelpcamp h4 {
+  margin: 1em 0 0 0;
+  font-family: 'poppins';
+  width: 90%;
+  font-weight: 400;
+  color: grey;
+  font-size: 12px;
+}
+
+.cofounder-section {
+  background-color: #2e3038;
+}
+
+.cofounder-section .cofounder-section-cont {
+  display: flex;
+  flex-direction: column;
+  margin: 5em 7em 0 7em;
+  padding: 6em 0 6em 0;
+  justify-content: space-between;
+  color: white;
+}
+
+.cofounder-section h2 {
+  width: 50%;
+  font-family: 'prata';
+  font-size: 30px;
+  margin-bottom: 1em;
+}
+
+.cofounder-section .column {
+  line-height: 1.65;
+  column-width: 30em;
+  column-count: 2;
+  column-gap: 4em;
+  margin-top: 0;
+}
+
+.cofounder-section .column p {
+  margin-bottom: 1em;
+  font-family: 'poppins';
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.working-with-me-cont {
+  display: flex;
+  flex-direction: column;
+  margin: 5em 7em 0 7em;
+  padding: 2em 0 2em 0;
+  color: white;
+}
+
+.working-with-me h2 {
+  font-family: 'prata';
+  font-size: 24px;
+  color: whitesmoke;
+}
+
+.working-with-me h4 {
+  margin: 0.5em 0 0 0;
+  font-family: 'poppins';
+  width: 32em;
+  font-weight: 400;
+  color: grey;
+  font-size: 12px;
+}
+
+.working-with-me .working-with-me-cont .touch {
+  font-family: 'prata';
+  font-size: 14px;
+  background-color: var(--yellow);
+  margin-top: 1em;
+  padding: 12px 10px;
+  color: black;
+  width: 8em;
+}
+
+.working-with-me .working-with-me-cont .touch:hover {
+  border-radius: 5em;
+  transition: 0.4s;
+}
+
+footer {
+  background-color: #2e3038;
+}
+
+footer .footer-cont {
+  display: flex;
+  flex-direction: row;
+  margin: 5em 7em 0 7em;
+  padding: 1em 0 1em 0;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+}
+
+footer h1 {
+  font-family: 'prata';
+  font-size: 12px;
+}
+
+footer .footer-cont ul {
+  display: flex;
+  flex-direction: row;
+}
+
+footer .footer-cont ul img {
+  width: 1.8em;
+  margin-left: 0.5em;
+}
+
+@media only screen and (max-width: 768px) {
+  .top-menu .left-top-menu {
+    color: white;
+  }
+  enu p {
+    display: none;
+  }
+
+  .top-menu .right-top-menu img {
+    display: flex;
+  }
+
+  .top-menu .mid-top-menu,
+  .right-top-m .help-section .help-section-cont h2 {
+    width: 90%;
+  }
+
+  .help-section .help-section-cont h4 {
+    width: 80%;
+  }
+
+  .cofounder-section h2 {
+    width: 85%;
+  }
+}
+
+/* ARTICLE TAB ------------------------------------------- */
+.article {
+  color: black;
+  background-color: white;
+  font-family: 'Raleway';
+  font-size: 12px;
+  position: absolute;
+  padding: 22px 2.5em;
+  width: 23em;
+  font-weight: 600;
+  line-height: 35px;
+  transform: translateX(170%);
+  cursor: pointer;
+  position: fixed;
+  top: 5;
+  z-index: 10;
+  opacity: 98%;
+}
+
+/* CHATS TAB ------------------------------------------- */
+.chats {
+  color: black;
+  background-color: white;
+  font-family: 'Raleway';
+  font-size: 12px;
+  position: absolute;
+  padding: 22px 2.5em;
+  width: 23em;
+  font-weight: 600;
+  line-height: 35px;
+  transform: translateX(200%);
+  cursor: pointer;
+  position: fixed;
+  top: 5;
+  z-index: 10;
+  opacity: 98%;
+}
+
+/* AWARDS TAB ------------------------------------------- */
+.awards {
+  color: black;
+  background-color: white;
+  font-family: 'Raleway';
+  font-size: 12px;
+  position: absolute;
+  padding: 22px 2.5em;
+  width: 23em;
+  font-weight: 600;
+  line-height: 35px;
+  transform: translateX(230%);
+  cursor: pointer;
+  /* position: absolute; */
+  position: fixed;
+  top: 5;
+  z-index: 10;
+  opacity: 98%;
+}
+
+/* AWARDS TAB ------------------------------------------- */
+.about {
+  color: black;
+  background-color: white;
+  font-family: 'Raleway';
+  font-size: 12px;
+  position: absolute;
+  padding: 22px 2.5em;
+  width: 23em;
+  font-weight: 600;
+  line-height: 35px;
+  transform: translateX(260%);
+  cursor: pointer;
+  position: fixed;
+  top: 5;
+  z-index: 10;
+  opacity: 98%;
+}
+
+.tab li:hover {
+  transition: ease 0.4s;
+  background-color: rgb(228, 225, 225);
+  padding: 0 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* @media only screen and (max-width: px) {
+  .top-menu .left-top-menu {
+    color: white;
+  }
+
+  .top-menu .mid-top-menu,
+  .right-top-menu p {
+    display: none;
+  }
+
+  .top-menu .right-top-menu img {
+    display: flex;
+  }
+
+  .help-section .help-section-cont h2 {
+    width: 90%;
+  }
+
+  .help-section .help-section-cont h4 {
+    width: 80%;
+  }
+
+  .cofounder-section h2 {
+    width: 85%;
+  }
+} */
+
+@media only screen and (max-width: 1006px) {
+  .help-section .help-section-cont h2 {
+    width: 90%;
+  }
+
+  .help-section .help-section-cont h4 {
+    width: 80%;
+  }
+
+  .cofounder-section h2 {
+    width: 85%;
+  }
+}
